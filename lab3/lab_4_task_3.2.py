@@ -4,7 +4,7 @@ from pygame.draw import *
 pygame.init()
 
 FPS = 30
-screen = pygame.display.set_mode((400, 400))
+screen = pygame.display.set_mode((800, 400))
 
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
@@ -18,9 +18,9 @@ PINK=(230, 50, 230)
 BROWN=(100,40,0)
 
 screen.fill(GREEN)
-rect(screen,BLUE,(0,0,400,200))
+rect(screen,BLUE,(0,0,800,160))
 
-#body
+#body1
 circle(screen,LGRAY , (120,100),30)
 ellipse(screen,GRAY,(90,130,60,170))
 
@@ -43,7 +43,7 @@ circle(screen,WHITE, (50,150),15)
 line(screen, BLACK,[340,160],[305,140],2)
 line(screen, BLACK,[340,160],[370,140],2)
 
-#girl
+#girl1
 polygon(screen,PINK,[[300,110],[260,270],[340,270]])
 circle(screen,LGRAY , (300,100),30)
 line(screen, BLACK,[200,190],[295,140],2)
@@ -58,6 +58,16 @@ line(screen, BLACK,[280,340],[265,340],2)
 
 line(screen, BLACK,[320,270],[320,340],2)
 line(screen, BLACK,[320,340],[335,340],2)
+
+#girl2
+polygon(screen,PINK,[[500,110],[460,270],[540,270]])
+circle(screen,LGRAY , (500,100),30)
+
+#legs
+line(screen, BLACK,[480,270],[480,340],2)
+line(screen, BLACK,[480,340],[465,340],2)
+line(screen, BLACK,[520,270],[520,340],2)
+line(screen, BLACK,[520,340],[535,340],2)
 
 pygame.display.update()
 clock = pygame.time.Clock()
