@@ -39,7 +39,7 @@ def women(x,y):#x-расстояние от центра 400,x,y -положен
     line(screen, BLACK,[400+x+20,y+170],[420+x,y+240],2)
     line(screen, BLACK,[400+x+20,y+240],[430+x,y+240],2)
   
-
+#f
 screen.fill(GREEN)
 rect(screen,BLUE,(0,0,800,160))
 women(-100,100)
