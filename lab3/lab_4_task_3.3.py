@@ -28,19 +28,28 @@ line(screen, BLACK,[480,340],[465,340],2)
 line(screen, BLACK,[520,270],[520,340],2)
 line(screen, BLACK,[520,340],[535,340],2)'''
 
-def women(x,y):#x-расстояние от центра 400,x,y -положение головы
+def women(x,y):                                                  #x-расстояние от центра 400,x,y -положение головы
     polygon(screen,PINK,[[x+400,y],[x+360,y+170],[x+440,y+170]])
-    circle(screen,LGRAY , (400+x,y),30)
+    circle(screen,LGRAY, (400+x,y),30)
     line(screen, BLACK,[400+x-20,y+170],[400+x-20,y+240],2)
     line(screen, BLACK,[400+x-20,y+240],[400+x-35,y+240],2)
     line(screen, BLACK,[400+x+20,y+170],[420+x,y+240],2)
     line(screen, BLACK,[400+x+20,y+240],[430+x,y+240],2)
+
+line(screen, BLACK,[400,140],[450,160],2)
+line(screen, BLACK,[495,140],[450,160],2)
+line(screen, BLACK,[600,190],[510,140],2)
+
+line(screen, BLACK,[200,190],[295,140],2)
+#hand
+line(screen, BLACK,[350,160],[305,140],2)
+line(screen, BLACK,[350,160],[400,140],2)
   
 screen.fill(GREEN)
 rect(screen,BLUE,(0,0,800,160))
 
 #body1
-circle(screen,LGRAY , (120,100),30)
+circle(screen,LGRAY ,(120,100),30)
 ellipse(screen,GRAY,(90,130,60,170))
 line(screen, BLACK,[140,160],[200,190],2)
 line(screen, BLACK,[95,160],[70,210],2)
@@ -74,9 +83,9 @@ line(screen, BLACK,[320,270],[320,340],2)
 line(screen, BLACK,[320,340],[335,340],2)
 
 #girl2
-#polygon(screen,PINK,[[500,110],[460,270],[540,270]])
-#line(screen, BLACK,[400,140],[450,160],2)
-#line(screen, BLACK,[600,190],[510,140],2)
+polygon(screen,PINK,[[500,110],[460,270],[540,270]])
+line(screen, BLACK,[400,140],[450,160],2)
+line(screen, BLACK,[600,190],[510,140],2)
 
 #legs
 line(screen, BLACK,[480,270],[480,340],2)
