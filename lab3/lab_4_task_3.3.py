@@ -30,19 +30,19 @@ line(screen, BLACK,[520,340],[535,340],2)'''
 def women(x,y):#x-расстояние от центра 400,x,y -положение головы
     polygon(screen,PINK,[[x+400,y],[x+360,y+170],[x+440,y+170]])
     circle(screen,LGRAY , (400+x,y),30)
-    line(screen, BLACK,[400+x-100,y+40],[400+x-50,y+60],2)
-    line(screen, BLACK,[400+x-5,y+40],[400+x-50,y+60],2)
-    line(screen, BLACK,[400+x+100,y+90],[400+x+110,y+40],2)
-    '''#legs
-    line(screen, BLACK,[480,270],[480,340],2)
-    line(screen, BLACK,[480,340],[465,340],2)
-    line(screen, BLACK,[520,270],[520,340],2)
-    line(screen, BLACK,[520,340],[535,340],2)'''
+    #line(screen, BLACK,[400+x-100,y+40],[400+x-50,y+60],2)
+    #line(screen, BLACK,[400+x-5,y+40],[400+x-50,y+60],2)
+    #line(screen, BLACK,[400+x+100,y+90],[400+x+110,y+40],2)
+    #legs
+    line(screen, BLACK,[400+x-20,y+170],[400+x-20,y+240],2)
+    line(screen, BLACK,[400+x-20,y+240],[400+x-35,y+240],2)
+    line(screen, BLACK,[400+x+20,y+170],[420+x,y+240],2)
+    line(screen, BLACK,[400+x+20,y+240],[430+x,y+240],2)
   
 
 screen.fill(GREEN)
 rect(screen,BLUE,(0,0,800,160))
-women(100,100)
+women(-100,100)
 #body1
 circle(screen,LGRAY , (120,100),30)
 ellipse(screen,GRAY,(90,130,60,170))
