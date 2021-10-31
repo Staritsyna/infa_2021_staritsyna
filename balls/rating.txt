@@ -1,0 +1,11 @@
+Kr -7
+Lo 1
+Key 15
+Leo 26
+Mike 28
+Maf 31
+Ann 36
+Jane 37
+Ted 63
+Den 7
+ted 12
